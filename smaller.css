@@ -1,0 +1,146 @@
+/* UTILS */
+
+main {
+    padding: 0 50px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+/* MAIN MENU */
+
+.main-menu {
+    justify-content: flex-start;
+}
+
+.main-menu svg {
+    opacity: 0.3;
+}
+
+.main-menu ul, .main-menu img {
+    display: none;
+}
+
+.main-menu .menu-button {
+    display: block;
+}
+
+/* ANNOUNCEMENT */
+.announcement {
+    display: none;
+}
+
+
+/* HEADER */
+
+header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 15px 10px;
+}
+
+header .tnw-logo {
+    max-width: 45%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* MAIN GRID */
+
+.main-grid {
+    grid-template-rows: 25vh 12vh 25vh 25vh;
+}
+
+.main-grid div:last-child, .main-grid div:nth-child(4) {
+    grid-column: unset;
+    grid-row: unset;
+}
+
+.main-grid div:nth-child(n) {
+    grid-column-end: span 2;
+}
+
+.main-grid div:first-child {
+    grid-column: 1 / -1;
+}
+
+/* POPULAR ARTICLES */
+
+.popular-articles ul {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.popular-articles li {
+    align-items: center;
+}
+
+/* LATEST STORIES */
+
+.latest-stories div {
+    grid-column-end: span 2;
+}
+
+/* EXPLORE */
+
+.explore {
+    padding: 40px 70px 90px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 22vh;
+    grid-auto-rows: 0;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* FEATURES SHOWCASE*/
+.work-features {
+    padding: 40px;
+    gap: 40px;
+}
+
+.feature-showcase {
+    grid-template-columns: unset;
+    grid-auto-flow: row;
+    place-items: center;
+    gap: 20px
+}
+
+/* BRANDS */
+
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.brands > * {
+    max-width: 33%;
+}
+
+/* FOOTER */
+
+.footer-links {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 20px;
+}
+
+.footer .footer-logo {
+    grid-column: 1 / -1;
+}
+
+.footer h2 {
+    font-weight: 200;
+}
