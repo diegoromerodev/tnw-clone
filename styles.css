@@ -2,8 +2,358 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
 }
 
 body {
     font-family: sans-serif;
 }
+
+main {
+    padding: 0 25px;
+    overflow-x: hidden;
+}
+
+/* MAIN MENU */
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 15px;
+    background-color: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.main-menu svg {
+    width: 75px;
+}
+
+.main-menu ul {
+    display: flex;
+    gap: 25px;
+    text-transform: uppercase;
+}
+
+.main-menu img {
+    width: 20px;
+    filter: invert(80%);
+    margin-right: 25px;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+    position: fixed;
+    top: 50px;
+    height: 35px;
+    background-color: #f5da40;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    padding-left: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 15px 40px;
+    margin: 50px;
+}
+
+header > * {
+    flex: 1;
+}
+
+header svg {
+    max-width: 300px;
+}
+
+
+header h1 {
+    width: 50%;
+    text-align: right;
+    display: grid;
+    align-items: center;
+    font-weight: 200;
+    color: #555;
+}
+
+/* MAIN GRID */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25vh 12vh 25vh;
+    gap: 5px;
+}
+
+.main-grid div {
+    background-color: #555;
+}
+
+.main-grid div:first-child {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.main-grid div:last-child {
+    grid-column: 3 / -1;
+    grid-row: 2 / -1;
+}
+.main-grid div:nth-child(4) {
+    grid-column-end: span 2;
+}
+
+/* POPULAR ARTICLES */
+
+.popular-articles {
+    padding: 50px;
+    background-color: #f0f0f0;
+    margin: 40px 0;
+}
+
+.popular-articles h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #999;
+}
+
+.popular-articles ul {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.popular-articles li {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.popular-articles span {
+    font-weight: bold;
+    font-size: 2em;
+    color: #c09;
+}
+
+.popular-articles p {
+    transition: all 0.3s ease;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 3px;
+}
+
+.popular-articles p:hover {
+    text-decoration: underline;
+    text-decoration-color: #ebb1dc;
+    text-decoration-thickness: 3px;
+}
+
+/* LATEST STORIES */
+
+.latest-stories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-auto-rows: 22vh;
+    gap: 20px;
+    padding: 10px 30px 120px;
+}
+
+.latest-stories h2 {
+    grid-column: 1 / -1;
+    margin: 30px 0;
+    font-size: 2.5rem;
+}
+
+.latest-stories div {
+    background-color: #999;
+}
+
+/* EXPLORE */
+
+.explore {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-auto-rows: 22vh;
+    gap: 20px;
+    padding: 40px 40px 90px;
+    background-color: #f0f0f0;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
+.explore h2 {
+    grid-column: 1 / -1;
+    margin: 30px 0;
+    font-size: 2.5rem;
+}
+
+.explore div {
+    background-color: #999;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-auto-rows: 1fr;
+    background: conic-gradient(red, orange, yellow, green, blue);;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    padding: 50px 0;
+    background-image: url(https://next.tnwcdn.com/assets/next/img/spacesbg.png);
+    background-size: 120%;
+    background-attachment: fixed;
+    background-position: 50%;
+    color: #fafafa;
+    background-repeat: no-repeat;
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    flex: 1;
+    width: 100%;
+}
+
+.newsletter img {
+    width: 20px;
+    filter: invert(80%);
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+}
+
+/* VIDEOS */
+
+.video-showcase {
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: 70vw 1fr;
+    grid-auto-rows: auto calc(39.375vw + 7em);
+    gap: 20px;
+    background-color: #f0f0f0;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
+.video-showcase h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    grid-column: 1 / -1;
+}
+
+.video-showcase iframe {
+    width: 70vw;
+    height: 39.375vw;
+}
+
+.current-video div {
+    height: 7em;
+    background-color: #333;
+    color: #fafafa;
+    padding: 0 20px;
+    margin-top: -5px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+.current-video h4 {
+    padding-bottom: 15px;
+}
+
+.current-video p {
+    font-weight: 100;
+}
+
+.more-videos {
+    overflow-y: auto;
+}
+
+.more-videos img {
+    width: 100%;
+}
+
+/* WORK WITH US */
+
+.work-with-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.copy {
+    padding: 100px 0;
+}
+
+.copy h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.copy h2 {
+    font-size: 2rem;
+    margin: 5px 0 20px;
+}
+
+.copy p {
+    font-size: 1.2rem;
+}
+
+.copy button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #0cc;
+    color: #fafafa;
+    margin-top: 40px;
+}
+
+.feature-showcase {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.work-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+}
+
+/* BRANDS SHOWCASE*/

@@ -1,25 +1,196 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
         <title>TNW | The heart of tech</title>
     </head>
     <body>
-        <nav></nav>
-        <aside></aside>
-        <header></header>
+        <nav class="main-menu">
+            <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 66 16"><path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path></svg>
+            <ul>
+                <li>Home</li>
+                <li>News</li>
+                <li>Events</li>
+                <li>Programs</li>
+                <li>Spaces</li>
+                <li>More</li>
+            </ul>
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGQ9Ik0xMC42ODgsOTUuMTU2QzgwLjk1OCwxNTQuNjY3LDIwNC4yNiwyNTkuMzY1LDI0MC41LDI5Mi4wMWM0Ljg2NSw0LjQwNiwxMC4wODMsNi42NDYsMTUuNSw2LjY0Ng0KCQkJCWM1LjQwNiwwLDEwLjYxNS0yLjIxOSwxNS40NjktNi42MDRjMzYuMjcxLTMyLjY3NywxNTkuNTczLTEzNy4zODUsMjI5Ljg0NC0xOTYuODk2YzQuMzc1LTMuNjk4LDUuMDQyLTEwLjE5OCwxLjUtMTQuNzE5DQoJCQkJQzQ5NC42MjUsNjkuOTksNDgyLjQxNyw2NCw0NjkuMzMzLDY0SDQyLjY2N2MtMTMuMDgzLDAtMjUuMjkyLDUuOTktMzMuNDc5LDE2LjQzOEM1LjY0Niw4NC45NTgsNi4zMTMsOTEuNDU4LDEwLjY4OCw5NS4xNTZ6Ii8+DQoJCQk8cGF0aCBkPSJNNTA1LjgxMywxMjcuNDA2Yy0zLjc4MS0xLjc2LTguMjI5LTEuMTQ2LTExLjM3NSwxLjU0MkM0MTYuNTEsMTk1LjAxLDMxNy4wNTIsMjc5LjY4OCwyODUuNzYsMzA3Ljg4NQ0KCQkJCWMtMTcuNTYzLDE1Ljg1NC00MS45MzgsMTUuODU0LTU5LjU0Mi0wLjAyMWMtMzMuMzU0LTMwLjA1Mi0xNDUuMDQyLTEyNS0yMDguNjU2LTE3OC45MTdjLTMuMTY3LTIuNjg4LTcuNjI1LTMuMjgxLTExLjM3NS0xLjU0Mg0KCQkJCUMyLjQxNywxMjkuMTU2LDAsMTMyLjkyNywwLDEzNy4wODN2MjY4LjI1QzAsNDI4Ljg2NSwxOS4xMzUsNDQ4LDQyLjY2Nyw0NDhoNDI2LjY2N0M0OTIuODY1LDQ0OCw1MTIsNDI4Ljg2NSw1MTIsNDA1LjMzMw0KCQkJCXYtMjY4LjI1QzUxMiwxMzIuOTI3LDUwOS41ODMsMTI5LjE0Niw1MDUuODEzLDEyNy40MDZ6Ii8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+        </nav>
+        <aside class="announcement">
+            <p>Snag a deal with up to 20% off TNW Conference group →</p>
+        </aside>
+        <header>
+            <svg serveaspectratio="xMidYMid meet" viewBox="0 0 66 16" xmlns="http://www.w3.org/2000/svg"><path fill="#000" class="nextLogo" d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path></svg>
+            <h1>The heart of tech</h1>
+        </header>
         <main>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+            <article class="main-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+            <article class="popular-articles">
+                <h2>Popular articles today</h2>
+                <ul>
+                    <li><span>1</span>
+                        <p>How a simple crystal could help pave the way to full-scale quantum computing</li>
+                        </p>
+                    <li><span>2</span>
+                        <p>Here’s how hackers are cracking two-factor authentication security
+                        </p>
+                    </li>
+                    <li><span>3</span>
+                        <p>An optimist’s guide to the future: How quantum AI could make Earth a paradise
+                        </p>
+                    </li>
+                    <li><span>4</span>
+                        <p>TikTok partners with blockchain startup — and this could be good news for creators
+                        </p>
+                    </li>
+                    <li><span>5</span>
+                        <p>Someone ported Super Mario 64 to play in a browser (again)
+                        </p>
+                    </li>
+                </ul>
+            </article>
+            <article class="latest-stories">
+                <h2>Latest stories</h2>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+            <article class="explore">
+                <h2>Explore our channels</h2>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+            <article class="newsletter">
+                <h2>Get the snarkiest newsletter in tech</h2>
+                <p>Subscribe to our twice-weekly Big Spam or check out our other newsletters.</p>
+                <div>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGQ9Ik0xMC42ODgsOTUuMTU2QzgwLjk1OCwxNTQuNjY3LDIwNC4yNiwyNTkuMzY1LDI0MC41LDI5Mi4wMWM0Ljg2NSw0LjQwNiwxMC4wODMsNi42NDYsMTUuNSw2LjY0Ng0KCQkJCWM1LjQwNiwwLDEwLjYxNS0yLjIxOSwxNS40NjktNi42MDRjMzYuMjcxLTMyLjY3NywxNTkuNTczLTEzNy4zODUsMjI5Ljg0NC0xOTYuODk2YzQuMzc1LTMuNjk4LDUuMDQyLTEwLjE5OCwxLjUtMTQuNzE5DQoJCQkJQzQ5NC42MjUsNjkuOTksNDgyLjQxNyw2NCw0NjkuMzMzLDY0SDQyLjY2N2MtMTMuMDgzLDAtMjUuMjkyLDUuOTktMzMuNDc5LDE2LjQzOEM1LjY0Niw4NC45NTgsNi4zMTMsOTEuNDU4LDEwLjY4OCw5NS4xNTZ6Ii8+DQoJCQk8cGF0aCBkPSJNNTA1LjgxMywxMjcuNDA2Yy0zLjc4MS0xLjc2LTguMjI5LTEuMTQ2LTExLjM3NSwxLjU0MkM0MTYuNTEsMTk1LjAxLDMxNy4wNTIsMjc5LjY4OCwyODUuNzYsMzA3Ljg4NQ0KCQkJCWMtMTcuNTYzLDE1Ljg1NC00MS45MzgsMTUuODU0LTU5LjU0Mi0wLjAyMWMtMzMuMzU0LTMwLjA1Mi0xNDUuMDQyLTEyNS0yMDguNjU2LTE3OC45MTdjLTMuMTY3LTIuNjg4LTcuNjI1LTMuMjgxLTExLjM3NS0xLjU0Mg0KCQkJCUMyLjQxNywxMjkuMTU2LDAsMTMyLjkyNywwLDEzNy4wODN2MjY4LjI1QzAsNDI4Ljg2NSwxOS4xMzUsNDQ4LDQyLjY2Nyw0NDhoNDI2LjY2N0M0OTIuODY1LDQ0OCw1MTIsNDI4Ljg2NSw1MTIsNDA1LjMzMw0KCQkJCXYtMjY4LjI1QzUxMiwxMzIuOTI3LDUwOS41ODMsMTI5LjE0Niw1MDUuODEzLDEyNy40MDZ6Ii8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                    <input type="text" placeholder="Email">
+                    <button>
+                        SUBSCRIBE
+                    </button>
+                </div>
+            </article>
+            <article class="video-showcase">
+                <h2>Watch what we made you</h2>
+                <div class="current-video">
+                    <iframe src="https://www.youtube.com/embed/S1-wuoFsdT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <h4>Nothing Ear (1) review: Style… and substance?</h4>
+                        <p>Jul 30, 2021</p>
+                    </div>
+                </div>
+                <div class="more-videos">
+                    <div>
+                        <img src="https://i.ytimg.com/vi/S1-wuoFsdT4/hqdefault.jpg">
+                        <p>Nothing Ear (1) review: Style… and substance?</p>
+                    </div>
+                    <div>
+                        <img src="https://i.ytimg.com/vi/S1-wuoFsdT4/hqdefault.jpg">
+                        <p>Nothing Ear (1) review: Style… and substance?</p>
+                    </div>
+                    <div>
+                        <img src="https://i.ytimg.com/vi/S1-wuoFsdT4/hqdefault.jpg">
+                        <p>Nothing Ear (1) review: Style… and substance?</p>
+                    </div>
+                    <div>
+                        <img src="https://i.ytimg.com/vi/S1-wuoFsdT4/hqdefault.jpg">
+                        <p>Nothing Ear (1) review: Style… and substance?</p>
+                    </div>
+                    <div>
+                        <img src="https://i.ytimg.com/vi/S1-wuoFsdT4/hqdefault.jpg">
+                        <p>Nothing Ear (1) review: Style… and substance?</p>
+                    </div>
+                </div>
+            </article>
+            <article class="work-with-us">
+                <div class="copy">
+                    <h4>Reach your goals</h4>
+                    <h2>Work with us</h2>
+                    <p>
+                        TNW takes center stage in the tech industry, offering creative media campaigns, sizzling tech events, bespoke innovation programs, and prime office locations in Amsterdam. Want to engage your audience more effectively, innovate your business, and position your brand in front of a digital-savvy audience?
+                    </p>
+                    <button>
+                        GET IN TOUCH
+                    </button>
+                </div>
+                <div class="work-features">
+                    <div class="feature-showcase">
+                        <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-media.svg">
+                        <h4>Media</h4>
+                    </div>
+                    <div class="feature-showcase">
+                        <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-events.svg">
+                        <h4>Events</h4>
+                    </div>
+                    <div class="feature-showcase">
+                        <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-spaces.svg">
+                        <h4>Spaces</h4>
+                    </div>
+                    <div class="feature-showcase">
+                        <img src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-programs.svg">
+                        <h4>Programs</h4>
+                    </div>
+                </div>
+            </article>
+            <article class="brands">
+                <img src="https://next.tnwcdn.com/assets/next/img/partners/google.svg">
+                <img src="https://next.tnwcdn.com/assets/next/img/partners/etoro.svg">
+                <img src="https://next.tnwcdn.com/assets/next/img/partners/ibm.svg">
+                <img src="https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg">
+                <img src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg">
+                <img src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg">
+                <img src="https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg">
+                <img src="https://next.tnwcdn.com/assets/next/img/partners/accenture.svg">
+                <img src="https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg">
+            </article>
             <footer>
-                <section></section>
-                <section></section>
+                <section class="footer-links">
+                    <div class="footer-logo">
+                        <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 66 16"><path fill="#fff" d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path></svg>
+                        <h2>The heart of tech</h2>
+                    </div>
+                    <div>
+                        <h3>MORE TNW</h3>
+                        <ul class="footer-hover">
+                            <li>Media</li>
+                            <li>Events</li>
+                            <li>Programs</li>
+                            <li>Spaces</li>
+                            <li>Newsletters</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>ABOUT TNW</h3>
+                        <ul class="footer-hover">
+                            <li>Partner with us</li>
+                            <li>Jobs</li>
+                            <li>Terms & Conditions</li>
+                            <li>Cookie Statement</li>
+                            <li>Privacy Statement</li>
+                            <li>Editorial Policy</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="footer-text">
+                    <p>TNW is a <strong>Financial Times</strong> company.</p>
+                    <p>Copyright © 2006—2021, The Next Web B.V. Made with <3 in Amsterdam.</p>
+                </section>
             </footer>
         </main>
     </body>
