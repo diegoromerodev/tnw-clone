@@ -11,11 +11,11 @@ ul {
 
 body {
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 main {
     padding: 0 25px;
-    overflow-x: hidden;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -125,10 +125,17 @@ header h1 {
 
 /* POPULAR ARTICLES */
 
-.popular-articles {
-    padding: 50px;
+.popular-articles-wrapper {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
     background-color: #f0f0f0;
-    margin: 40px 0;
+}
+
+.popular-articles {
+    max-width: 1600px;
+    padding: 50px;
+    margin: 40px auto;
 }
 
 .popular-articles h2 {
@@ -172,6 +179,8 @@ header h1 {
 /* LATEST STORIES */
 
 .latest-stories {
+    margin: 0 auto;
+    max-width: 1250px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -192,17 +201,22 @@ header h1 {
 
 /* EXPLORE */
 
+.explore-wrapper {
+    background-color: #f0f0f0;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
 .explore {
+    max-width: 1600px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     grid-auto-rows: 22vh;
     gap: 20px;
     padding: 40px 40px 90px;
-    background-color: #f0f0f0;
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
 }
 
 .explore h2 {
@@ -264,29 +278,37 @@ header h1 {
 
 .video-showcase {
     padding: 100px 60px;
-    display: grid;
-    grid-template-columns: 70vw 1fr;
-    grid-auto-rows: auto calc(39.375vw + 7em);
-    gap: 20px;
     background-color: #f0f0f0;
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
+    display: flex;
+    justify-content: center;
+}
+
+.video-showcase .container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto 60vh;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.video-showcase iframe {
+    width: 100%;
+    height: 80%;
 }
 
 .video-showcase h2 {
     font-size: 2.5rem;
-    margin-bottom: 60px;
     grid-column: 1 / -1;
+    margin-bottom: 60px;
 }
 
-.video-showcase iframe {
-    width: 70vw;
-    height: 39.375vw;
-}
 
 .current-video div {
-    height: 7em;
+    height: 20%;
     background-color: #333;
     color: #fafafa;
     padding: 0 20px;
@@ -318,6 +340,8 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .copy {
@@ -363,6 +387,8 @@ header h1 {
 /* BRANDS SHOWCASE*/
 
 .brands {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-auto-flow: column;
     padding: 0 50px 80px;
@@ -370,14 +396,18 @@ header h1 {
 
 /* FOOTER */
 
-footer {
+.footer-wrapper {
     background-color: #111;
-    color: #fafafa;
-    padding: 60px 40px;
-    overflow: hidden;
 }
 
-footer .tnw-logo {
+.footer {
+    color: #fafafa;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .tnw-logo {
     max-width: 150px;
     fill: #fafafa;
     margin-bottom: 20px;
@@ -389,7 +419,7 @@ footer .tnw-logo {
 }
 
 .footer-hover {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .footer-hover li {
