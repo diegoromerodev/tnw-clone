@@ -69,6 +69,27 @@ header h1 {
     grid-column: 1 / -1;
 }
 
+.main-grid div:nth-child(5) h2 {
+    font-size: 1.3rem;
+}
+
+.countdown {
+    overflow: hidden;
+    position: relative;
+}
+
+.countdown img {
+    position: absolute;
+}
+
+.countdown .text-cont {
+    position: absolute;
+    color: #fafafa;
+    z-index: 1;
+    bottom: 30px;
+    padding: 0 40px 0 20px;
+}
+
 /* POPULAR ARTICLES */
 
 .popular-articles ul {
@@ -87,13 +108,18 @@ header h1 {
     grid-column-end: span 2;
 }
 
+
 /* EXPLORE */
 
 .explore {
     padding: 40px 70px 90px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 22vh;
     grid-auto-rows: 0;
+}
+
+.explore div:nth-child(6) {
+    display: none;
 }
 
 /* NEWSLETTER */
