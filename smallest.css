@@ -1,3 +1,106 @@
-body {
-    background-color: red;
+/* UTILS */
+
+main {
+    padding: 0;
+}
+
+/* MAIN GRID */
+
+.main-grid {
+    display: flex;
+    padding: 0 7px;
+}
+
+.main-grid div {
+    width: 80vw;
+    height: 80vw;
+    flex-shrink: 0;
+}
+
+.countdown {
+    background: #555;
+    height: 25vh;
+    width: 100%;
+    display: block;
+    margin: 7px;
+}
+
+/* LATEST STORIES */
+
+.latest-stories h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.latest-stories div {
+    grid-column-end: span 4;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    width: 100%;
+    grid-template-columns: 100%;
+}
+
+.newsletter h2 {
+    font-size: 1.5rem;
+}
+
+.newsletter div {
+    width: 90vw;
+}
+
+/* VIDEOS */
+
+.video-showcase .container {
+    grid-template-columns: unset;
+    grid-template-rows: auto auto;
+}
+
+.more-videos {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px;
+    margin-bottom: 40px;
+}
+
+.more-videos  img {
+    width: 30vw;
+}
+
+.video-showcase {
+    padding: 40px 0;
+}
+
+/* WORK WITH US */
+
+.work-with-us {
+    grid-template-columns: unset;
+}
+
+.copy {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.work-features {
+    padding: 0 25%;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    justify-content: space-between;
+}
+
+.feature-showcase:nth-child(1), .feature-showcase:nth-child(3){
+    margin-right: 50px;
+}
+
+.feature-showcase:nth-child(2), .feature-showcase:nth-child(4) {
+    margin-left: 50px;
+}
+
+/* BRANDS */
+
+.brands > * {
+    max-width: 50%;
 }

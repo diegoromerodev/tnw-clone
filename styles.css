@@ -56,6 +56,10 @@ main {
     margin-right: 25px;
 }
 
+.countdown {
+    display: none;
+}
+
 /* ANNOUNCEMENT */
 
 .announcement {
@@ -110,8 +114,32 @@ header h1 {
     gap: 7px;
 }
 
+
 .main-grid div {
+    cursor: pointer;
     background-color: #555;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-grid img {
+    height: 103%;
+    width: 103%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-grid h4,  .main-grid h2{
+    position: absolute;
+}
+
+.main-grid img:hover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .main-grid div:first-child {
@@ -378,10 +406,11 @@ header h1 {
 
 .copy p {
     font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .copy button {
-    padding: 15px 20px;
+    padding: 20px 25px;
     border-radius: 5px;
     background-color: #0cc;
     color: #fafafa;
